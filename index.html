@@ -18,7 +18,7 @@
     }
 
     body{
-      background:#000;
+      background:#000814;
       min-height:100vh;
       display:flex;
       justify-content:center;
@@ -31,16 +31,16 @@
       width:100%;
       max-width:430px;
       min-height:100vh;
-      padding:68px 22px 38px;
+      padding:42px 22px 38px;
       position:relative;
       overflow:hidden;
       background:
-      radial-gradient(circle at top,
-      #3d89ff 0%,
-      #1f57cb 17%,
-      #081f5b 39%,
-      #020814 70%,
-      #000 100%);
+        radial-gradient(circle at top,
+        #1d7bff 0%,
+        #0d4fe0 20%,
+        #07257c 42%,
+        #03103b 68%,
+        #000814 100%);
     }
 
     .app::before{
@@ -48,8 +48,8 @@
       position:absolute;
       inset:0;
       background:
-      radial-gradient(circle at 50% 8%, rgba(55,137,255,.35), transparent 42%),
-      linear-gradient(to bottom, rgba(255,255,255,.05), transparent 35%);
+        radial-gradient(circle at 50% 8%, rgba(70,150,255,.28), transparent 42%),
+        linear-gradient(to bottom, rgba(255,255,255,.04), transparent 35%);
       pointer-events:none;
     }
 
@@ -58,29 +58,9 @@
       z-index:2;
     }
 
-    .top-icon{
-      width:88px;
-      height:88px;
-      border-radius:28px;
-      background:linear-gradient(145deg,#39a0ff,#045dff);
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:
-      0 25px 55px rgba(0,102,255,.38),
-      inset 0 1px 1px rgba(255,255,255,.18);
-    }
-
-    .top-icon svg{
-      width:45px;
-      fill:#fff;
-      filter:drop-shadow(0 4px 10px rgba(0,0,0,.25));
-    }
-
     .logo{
-      margin-top:44px;
-      margin-bottom:30px;
+      margin-top:10px;
+      margin-bottom:58px;
       display:flex;
       justify-content:center;
       align-items:center;
@@ -88,33 +68,10 @@
 
     .logo img{
       width:100%;
-      max-width:355px;
-      height:auto;
-      object-fit:contain;
+      max-width:370px;
       display:block;
-      filter:drop-shadow(0 10px 26px rgba(0,102,255,.35));
-    }
-
-    .line{
-      width:100%;
-      height:2px;
-      margin-bottom:30px;
-      background:
-      linear-gradient(90deg,
-      transparent,
-      rgba(92,154,255,.95),
-      transparent);
-      box-shadow:0 0 18px rgba(92,154,255,.6);
-    }
-
-    .subtitle{
-      text-align:center;
-      color:#83bbff;
-      font-size:15px;
-      font-weight:900;
-      letter-spacing:9px;
-      margin-bottom:64px;
-      text-shadow:0 0 12px rgba(70,145,255,.45);
+      object-fit:contain;
+      filter:drop-shadow(0 15px 35px rgba(0,102,255,.22));
     }
 
     .menu{
@@ -126,9 +83,9 @@
     .card{
       min-height:100px;
       background:
-      linear-gradient(180deg,
-      rgba(12,12,15,.98),
-      rgba(2,2,4,.98));
+        linear-gradient(180deg,
+        rgba(12,12,15,.98),
+        rgba(2,2,4,.98));
       border-radius:34px;
       padding:18px 24px 18px 30px;
       display:flex;
@@ -138,8 +95,8 @@
       color:#fff;
       border:1px solid rgba(255,255,255,.06);
       box-shadow:
-      0 22px 45px rgba(0,0,0,.48),
-      inset 0 1px 0 rgba(255,255,255,.05);
+        0 22px 45px rgba(0,0,0,.48),
+        inset 0 1px 0 rgba(255,255,255,.05);
       transition:.2s ease;
     }
 
@@ -202,10 +159,10 @@
       height:2px;
       margin:70px 0 26px;
       background:
-      linear-gradient(90deg,
-      transparent,
-      rgba(92,154,255,.95),
-      transparent);
+        linear-gradient(90deg,
+        transparent,
+        rgba(92,154,255,.95),
+        transparent);
       box-shadow:0 0 18px rgba(92,154,255,.6);
     }
 
@@ -228,7 +185,7 @@
       }
 
       .logo img{
-        max-width:335px;
+        max-width:370px;
       }
 
       .title{
@@ -237,11 +194,6 @@
 
       .desc{
         font-size:13px;
-      }
-
-      .subtitle{
-        font-size:14px;
-        letter-spacing:7px;
       }
 
       footer{
@@ -256,19 +208,9 @@
   <main class="app">
     <div class="content">
 
-      <div class="top-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M13.3 2.2 4.2 13.7c-.5.6 0 1.5.8 1.5h5.2l-1.4 6.1c-.2.9.9 1.4 1.5.7l9.4-11.7c.5-.6 0-1.5-.8-1.5h-5.3l1.2-5.6c.2-.9-.9-1.5-1.5-.8z"/>
-        </svg>
-      </div>
-
       <div class="logo">
         <img src="logo.png" alt="ISISNET">
       </div>
-
-      <div class="line"></div>
-
-      <div class="subtitle">ULTRA VELOCIDADE</div>
 
       <div class="menu">
 
