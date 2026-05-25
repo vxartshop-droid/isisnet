@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ÁREA DO CLIENTE | ISISNET ULTRA FIBRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap');
+        
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: 'Rajdhani', sans-serif;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% -10%, #1e40af 0%, #000 70%);
+            z-index: -1;
+        }
+
+        .neon-text {
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        }
+
+        .action-card {
+            background: linear-gradient(145deg, #111, #050505);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+            border-radius: 2rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .action-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .fiber-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .btn-access {
+            background: #3b82f6;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-access:active { transform: scale(0.95); }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-start min-h-screen py-8 px-4 text-center">
+    <div class="bg-glow"></div>
+
+    <div class="w-full max-w-2xl">
+        <header class="mb-10">
+            <div class="inline-block p-4 mb-4 bg-blue-600/20 rounded-full border border-blue-500/30">
+                <i class="fas fa-user-shield text-4xl text-blue-500"></i>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-black neon-text italic uppercase tracking-tighter text-blue-500">ÁREA DO CLIENTE</h1>
+            <div class="fiber-line"></div>
+            <p class="text-sm font-bold tracking-[0.2em] text-zinc-400 uppercase">Autoatendimento Rápido e Fácil</p>
+        </header>
+
+        <section class="action-card">
+            <h2 class="text-2xl font-black neon-text uppercase mb-4 text-blue-400 italic">Segunda Via de Boleto</h2>
+            <p class="text-zinc-400 font-medium mb-8">
+                Perdeu o seu boleto ou ele não chegou? Não se preocupe! Você pode solicitar a 2ª via agora mesmo diretamente pelo nosso suporte financeiro.
+            </p>
+            <a href="https://wa.me/5598986013769?text=Quero+minha+segunda+via" class="btn-access">
+                <i class="fas fa-file-invoice-dollar"></i>
+                Solicitar Boleto
+            </a>
+        </section>
+
+        <section class="action-card">
+            <h2 class="text-2xl font-black neon-text uppercase mb-4 text-blue-400 italic">Suporte Técnico</h2>
+            <p class="text-zinc-400 font-medium mb-8">
+                Está com dificuldades na sua conexão? Nosso time técnico está de prontidão para realizar testes e garantir sua ultra velocidade.
+            </p>
+            <a href="https://wa.me/5598986013769?text=Olá!+Preciso+de+suporte+técnico+com+minha+internet." class="btn-access !bg-zinc-800 !box-shadow-none">
+                <i class="fas fa-tools text-blue-500"></i>
+                Abrir Chamado
+            </a>
+        </section>
+
+        <div class="grid grid-cols-2 gap-4 mb-10">
+            <div class="p-4 bg-zinc-900/50 rounded-2xl border border-zinc-800">
+                <i class="fas fa-clock text-blue-500 mb-2"></i>
+                <p class="text-[10px] uppercase font-bold text-zinc-500">Atendimento</p>
+                <p class="text-xs font-bold text-white">Seg a Sáb</p>
+            </div>
+            <div class="p-4 bg-zinc-900/50 rounded-2xl border border-zinc-800">
+                <i class="fas fa-headset text-blue-500 mb-2"></i>
+                <p class="text-[10px] uppercase font-bold text-zinc-500">Humanizado</p>
+                <p class="text-xs font-bold text-white">Sem Robôs</p>
+            </div>
+        </div>
+
+        <footer class="mt-8 mb-12 text-center">
+            <div class="mb-6">
+                <p class="text-[10px] uppercase font-bold text-zinc-600 tracking-widest mb-3">Siga nossas redes</p>
+                <a href="https://www.instagram.com/isisnet_telecom/" target="_blank" class="inline-flex items-center gap-2 text-zinc-400 hover:text-pink-500 transition-colors font-bold uppercase text-sm">
+                    <i class="fab fa-instagram text-xl"></i> @isisnet_telecom
+                </a>
+            </div>
+
+            <a href="index.html" class="text-zinc-500 active:text-white font-bold uppercase tracking-widest transition text-xs flex items-center justify-center group">
+                <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> Voltar para o Início
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
