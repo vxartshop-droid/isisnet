@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DISPONIBILIDADE | ISISNET ULTRA FIBRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap');
+        
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: 'Rajdhani', sans-serif;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% -10%, #1e40af 0%, #000 70%);
+            z-index: -1;
+        }
+
+        .neon-text {
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        }
+
+        .city-card {
+            background: linear-gradient(145deg, #111, #050505);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+            border-radius: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .fiber-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .bairro-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+            color: #d4d4d8;
+        }
+
+        .accent-blue { color: #3b82f6; }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-start min-h-screen py-8 px-4">
+    <div class="bg-glow"></div>
+
+    <div class="w-full max-w-3xl">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-6xl font-black neon-text italic uppercase tracking-tighter text-blue-500">COBERTURA</h1>
+            <div class="fiber-line"></div>
+            <p class="text-lg font-bold tracking-[0.2em] text-zinc-400 uppercase">Onde a Ultra Velocidade Chega</p>
+        </header>
+
+        <div class="city-card">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="p-3 bg-blue-600/20 rounded-xl border border-blue-500/30">
+                    <i class="fas fa-city accent-blue text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-black neon-text uppercase italic">São Luís</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Bequimão</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Maranhão Novo</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Ipase</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Vila Sete de Setembro</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Cantinho do Céu</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Residencial Primavera</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Residencial Pinheiro</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Condomínio Palmeiras 2</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Rio Anil</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Nova Aurora</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Novo Cohatrac</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Cohabiano</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Cohatrac</div>
+            </div>
+        </div>
+
+        <div class="city-card">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="p-3 bg-blue-600/20 rounded-xl border border-blue-500/30">
+                    <i class="fas fa-map-marker-alt accent-blue text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-black neon-text uppercase italic">Paço do Lumiar</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Vila São José 1 e 2</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Thiago Arouso</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Vila do Povo</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Copacabana</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Carlos Augusto</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Paraná</div>
+                <div class="bairro-item"><i class="fas fa-check-circle text-blue-500 text-xs"></i> Conjunto Maria Firmina</div>
+            </div>
+        </div>
+
+        <section class="city-card text-center border-blue-500/50">
+            <p class="text-zinc-400 font-bold mb-4 uppercase tracking-widest text-sm">Seu bairro não está na lista?</p>
+            <a href="https://wa.me/5598986013769?text=Meu+bairro+não+está+na+lista,+gostaria+de+solicitar+viabilidade." target="_blank" class="bg-blue-600 active:bg-blue-500 px-8 py-4 rounded-2xl font-black uppercase transition shadow-lg shadow-blue-500/40 text-sm tracking-widest inline-block">
+                Solicitar Viabilidade
+            </a>
+        </section>
+
+        <footer class="mt-8 mb-12 text-center">
+            <a href="index.html" class="text-zinc-500 active:text-white font-bold uppercase tracking-widest transition text-xs flex items-center justify-center group">
+                <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> Voltar para o Início
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
