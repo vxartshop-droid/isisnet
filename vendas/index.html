@@ -16,18 +16,21 @@
             overflow-x: hidden; 
             -webkit-tap-highlight-color: transparent;
         }
+
         .bg-glow { 
             position: fixed; 
             top: 0; left: 0; width: 100%; height: 100%; 
             background: radial-gradient(circle at 50% -10%, #1e40af 0%, #000 70%); 
             z-index: -1; 
         }
+
         .plan-card { 
             background: linear-gradient(145deg, #111, #050505); 
             border: 1px solid rgba(59, 130, 246, 0.2); 
             box-shadow: 0 10px 30px rgba(0, 0, 0, 1); 
             transition: all 0.3s ease; 
         }
+
         .plan-card.featured { 
             border-color: #3b82f6; 
             box-shadow: 0 0 40px rgba(59, 130, 246, 0.3); 
@@ -41,6 +44,7 @@
             font-family: 'Orbitron', sans-serif; 
             text-shadow: 0 0 15px rgba(59, 130, 246, 0.6); 
         }
+
         .fiber-line { 
             height: 2px; 
             background: linear-gradient(90deg, transparent, #3b82f6, transparent); 
@@ -49,71 +53,164 @@
         }
 
         @media (max-width: 768px) {
-            .featured { transform: scale(1) !important; }
+            .featured { 
+                transform: scale(1) !important; 
+            }
         }
     </style>
 </head>
+
 <body class="flex flex-col items-center justify-start min-h-screen py-6 px-4">
+
     <div class="bg-glow"></div>
 
     <div class="w-full max-w-4xl">
+
         <header class="text-center mb-8">
-            <h1 class="text-3xl md:text-6xl font-black neon-text italic uppercase text-blue-500 tracking-tighter">PLANOS ULTRA</h1>
+            <h1 class="text-3xl md:text-6xl font-black neon-text italic uppercase text-blue-500 tracking-tighter">
+                PLANOS ULTRA
+            </h1>
+
             <div class="fiber-line"></div>
-            <p class="text-sm md:text-lg font-bold tracking-[0.2em] text-zinc-400 uppercase">A internet que acompanha seu ritmo</p>
+
+            <p class="text-sm md:text-lg font-bold tracking-[0.2em] text-zinc-400 uppercase">
+                A internet que acompanha seu ritmo
+            </p>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             
             <div class="plan-card p-6 rounded-[2rem] text-center flex flex-col justify-between">
+
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold uppercase text-zinc-400">Bronze</h3>
-                    <div class="text-4xl md:text-5xl font-black my-4 neon-text">400<span class="text-lg ml-1">MEGA</span></div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase text-zinc-400">
+                        Bronze
+                    </h3>
+
+                    <div class="text-4xl md:text-5xl font-black my-4 neon-text">
+                        400<span class="text-lg ml-1">MEGA</span>
+                    </div>
+
                     <ul class="text-sm text-zinc-500 space-y-2 mb-6 font-bold">
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Instalação 100% Grátis</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Wi-Fi Potente</li>
+                        <li>
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Instalação 100% Grátis
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Wi-Fi Potente
+                        </li>
                     </ul>
                 </div>
-                <div class="text-3xl font-black text-white mb-4">R$ 79,99<span class="text-xs text-zinc-500">/mês</span></div>
-                <a href="https://wa.me/5598986013769?text=Quero+o+plano+400MEGA" class="bg-zinc-800 active:bg-zinc-700 py-4 rounded-2xl font-black uppercase transition text-sm tracking-widest">Assinar Agora</a>
+
+                <div class="text-3xl font-black text-white mb-4">
+                    R$ 79,99<span class="text-xs text-zinc-500">/mês</span>
+                </div>
+
+                <a href="https://wa.me/5598986013769?text=Quero+o+plano+400MEGA"
+                   class="bg-zinc-800 active:bg-zinc-700 py-4 rounded-2xl font-black uppercase transition text-sm tracking-widest">
+                    Assinar Agora
+                </a>
+
             </div>
 
             <div class="plan-card featured p-6 rounded-[2rem] text-center border-2 flex flex-col justify-between relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-blue-600 px-4 py-1 text-[10px] font-black uppercase rounded-bl-xl">EM BREVE</div>
+
+                <div class="absolute top-0 right-0 bg-blue-600 px-4 py-1 text-[10px] font-black uppercase rounded-bl-xl">
+                    EM BREVE
+                </div>
+
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold uppercase text-blue-400">Ouro</h3>
-                    <div class="text-5xl md:text-6xl font-black my-4 neon-text">1000<span class="text-lg ml-1">MEGA</span></div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase text-blue-400">
+                        Ouro
+                    </h3>
+
+                    <div class="text-5xl md:text-6xl font-black my-4 neon-text">
+                        1000<span class="text-lg ml-1">MEGA</span>
+                    </div>
+
                     <ul class="text-sm text-zinc-300 space-y-2 mb-6 font-bold">
-                        <li><i class="fas fa-bolt text-blue-500 mr-2"></i>Ultra Velocidade</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Instalação Grátis</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Suporte Rápido</li>
+                        <li>
+                            <i class="fas fa-bolt text-blue-500 mr-2"></i>
+                            Ultra Velocidade
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Instalação Grátis
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Suporte Rápido
+                        </li>
                     </ul>
                 </div>
-                <div class="text-3xl md:text-4xl font-black text-white mb-4">EM BREVE<span class="text-xs text-zinc-400">/mês</span></div>
-                <a href="" class="bg-blue-600 active:bg-blue-500 py-4 rounded-2xl font-black uppercase transition shadow-lg shadow-blue-500/40 text-sm tracking-widest">EM BREVE</a>
+
+                <div class="text-3xl md:text-4xl font-black text-white mb-4">
+                    EM BREVE<span class="text-xs text-zinc-400">/mês</span>
+                </div>
+
+                <a href=""
+                   class="bg-blue-600 active:bg-blue-500 py-4 rounded-2xl font-black uppercase transition shadow-lg shadow-blue-500/40 text-sm tracking-widest">
+                    EM BREVE
+                </a>
+
             </div>
 
             <div class="plan-card p-6 rounded-[2rem] text-center flex flex-col justify-between">
+
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold uppercase text-zinc-400">Prata</h3>
-                    <div class="text-4xl md:text-5xl font-black my-4 neon-text">600<span class="text-lg ml-1">MEGA</span></div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase text-zinc-400">
+                        Prata
+                    </h3>
+
+                    <div class="text-4xl md:text-5xl font-black my-4 neon-text">
+                        600<span class="text-lg ml-1">MEGA</span>
+                    </div>
+
                     <ul class="text-sm text-zinc-500 space-y-2 mb-6 font-bold">
-                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Preço Justo</li>
-                        <li><i class="fas fa-wifi text-blue-500 mr-2"></i>Sinal Forte</li>
+                        <li>
+                            <i class="fas fa-check text-blue-500 mr-2"></i>
+                            Preço Justo
+                        </li>
+
+                        <li>
+                            <i class="fas fa-wifi text-blue-500 mr-2"></i>
+                            Sinal Forte
+                        </li>
                     </ul>
                 </div>
-                <div class="text-3xl font-black text-white mb-4">R$ 99,90<span class="text-xs text-zinc-500">/mês</span></div>
-                <a href="https://wa.me/5598986013769?text=Quero+o+plano+600MEGA" class="bg-zinc-800 active:bg-zinc-700 py-4 rounded-2xl font-black uppercase transition text-sm tracking-widest">Assinar Agora</a>
+
+                <div class="text-3xl font-black text-white mb-4">
+                    R$ 99,90<span class="text-xs text-zinc-500">/mês</span>
+                </div>
+
+                <a href="https://wa.me/5598986013769?text=Quero+o+plano+600MEGA"
+                   class="bg-zinc-800 active:bg-zinc-700 py-4 rounded-2xl font-black uppercase transition text-sm tracking-widest">
+                    Assinar Agora
+                </a>
+
             </div>
 
         </div>
 
         <footer class="text-center pb-8">
-            <p class="text-zinc-600 text-[10px] uppercase font-bold tracking-widest mb-4">Suporte: (98) 98601-3769</p>
-            <a href="index.html" class="text-zinc-500 active:text-white font-bold uppercase tracking-widest transition text-xs flex items-center justify-center">
-                <i class="fas fa-arrow-left mr-2"></i> Voltar para Início
+
+            <p class="text-zinc-600 text-[10px] uppercase font-bold tracking-widest mb-4">
+                Suporte: (98) 98601-3769
+            </p>
+
+            <a href="/"
+               class="text-zinc-500 active:text-white font-bold uppercase tracking-widest transition text-xs flex items-center justify-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Voltar para Início
             </a>
+
         </footer>
+
     </div>
+
 </body>
 </html>
